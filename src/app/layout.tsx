@@ -1,4 +1,4 @@
-import './globals.css';
+import '@/_styles/globals.css';
 
 import { geist } from '@/_utils/fonts';
 

@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "name": "nextjs-boilerplate",
+  "description": "Next.js 14 boilerplate projects",
   "version": "0.1.0",
   "private": true,
   "scripts": {
