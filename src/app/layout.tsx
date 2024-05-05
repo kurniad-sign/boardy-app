@@ -1,4 +1,4 @@
-import { UIProvider } from '@/_providers';
+import { ConvexProvider, UIProvider } from '@/_providers';
 
 import { geist } from '@/_utils/fonts';
 
@@ -12,7 +12,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={geist.className}>
       <body>
-        <UIProvider>{children}</UIProvider>
+        <ConvexProvider>
+          <UIProvider>{children}</UIProvider>
+        </ConvexProvider>
       </body>
     </html>
   );

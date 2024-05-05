@@ -1,3 +1,5 @@
+import { UserButton } from '@clerk/nextjs';
+
 import { Heading, Text } from '@/_components/atom';
 
 export default function Home() {
@@ -25,6 +27,7 @@ export default function Home() {
         dolores asperiores? Ut temporibus exercitationem dolores ad officiis
         aliquid. Nemo, possimus.
       </Text>
+      <UserButton />
     </>
   );
 }
