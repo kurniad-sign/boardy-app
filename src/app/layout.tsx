@@ -1,6 +1,8 @@
-import '@/_styles/globals.css';
+import { UIProvider } from '@/_providers';
 
 import { geist } from '@/_utils/fonts';
+
+import '@/_styles/globals.css';
 
 export default function RootLayout({
   children,
@@ -9,7 +11,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={geist.className}>
-      <body>{children}</body>
+      <body>
+        <UIProvider>{children}</UIProvider>
+      </body>
     </html>
   );
 }

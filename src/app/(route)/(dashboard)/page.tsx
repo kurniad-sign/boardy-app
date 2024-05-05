@@ -2,7 +2,7 @@ import { Heading, Text } from '@/_components/atom';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Heading component="h1" variant="title-1">
         Hello World
       </Heading>
@@ -25,6 +25,6 @@ export default function Home() {
         dolores asperiores? Ut temporibus exercitationem dolores ad officiis
         aliquid. Nemo, possimus.
       </Text>
-    </main>
+    </>
   );
 }
