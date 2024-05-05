@@ -1,0 +1,2 @@
+export const CONVEX_DEPLOYMENT = process.env.CONVEX_DEPLOYMENT;
+export const NEXT_PUBLIC_CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL;

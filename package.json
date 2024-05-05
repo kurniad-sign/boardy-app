@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "format": "prettier --write */**/*.{js,jsx,json,ts,tsx,scss,css,md}",
-    "dev": "rimraf .next && next dev",
+    "dev": "rimraf .next && next dev --turbo",
     "build": "rimraf && next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,9 +13,11 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@clerk/nextjs": "^5.0.6",
     "@nextui-org/react": "^2.3.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "convex": "^1.11.3",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.1.7",
     "jotai": "^2.8.0",
