@@ -5,7 +5,7 @@ import { cn } from '@/_utils/helpers';
 
 import { DistributiveOmit, fixedForwardRef } from '../helpers';
 
-const textStyles = cva('leading-6 [&:not(:first-child)]:mt-6', {
+const textStyles = cva('leading-6', {
   variants: {
     align: {
       left: 'text-left',
