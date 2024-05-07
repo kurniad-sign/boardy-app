@@ -17,8 +17,8 @@ export function OrgButton() {
         placement="right"
         content={<Text size={'small'}>Create Organization</Text>}
       >
-        <Button isIconOnly onPress={onOpen} radius="sm">
-          <Plus size={16} />
+        <Button isIconOnly onPress={onOpen} radius="sm" color="primary">
+          <Plus size={16} color="#FFFFFF" />
         </Button>
       </Tooltip>
       <Modal
