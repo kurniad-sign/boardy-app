@@ -1,33 +1,18 @@
-import { UserButton } from '@clerk/nextjs';
+import { Organization } from './_components/organization';
 
-import { Heading, Text } from '@/_components/atom';
+interface DashboardPageProps {
+  searchParams: {
+    search?: string;
+    favorites?: string;
+  };
+}
 
-export default function Home() {
+export default function DashboardPage(props: DashboardPageProps) {
+  const { searchParams } = props;
+
   return (
-    <>
-      <Heading component="h1" variant="title-1">
-        Hello World
-      </Heading>
-      <Heading component="h2" variant="title-2">
-        Hello World
-      </Heading>
-      <Heading component="h3" variant="title-3">
-        Hello World
-      </Heading>
-      <Heading component="h4" variant="title-4">
-        Hello World
-      </Heading>
-      <Heading component="h5" variant="title-5">
-        Hello World
-      </Heading>
-      <Heading>Hello World</Heading>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam,
-        cupiditate neque est, pariatur ut nesciunt porro rem atque, voluptatum
-        dolores asperiores? Ut temporibus exercitationem dolores ad officiis
-        aliquid. Nemo, possimus.
-      </Text>
-      <UserButton />
-    </>
+    <div className="h-[calc(100%-4rem)]">
+      <Organization params={searchParams} />
+    </div>
   );
 }
