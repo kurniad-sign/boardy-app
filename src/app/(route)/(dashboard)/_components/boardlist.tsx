@@ -50,7 +50,7 @@ export function BoardList(props: BoardListProps) {
         width={140}
         height={140}
         additionalComponent={
-          <Button color="primary" size="lg" className="mt-6">
+          <Button color="primary" className="mt-6">
             Create Board
           </Button>
         }
