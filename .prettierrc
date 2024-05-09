@@ -17,11 +17,13 @@
     "^@/_providers/(.*)$",
     "^@/_config/(.*)$",
     "^@/_lib/(.*)$",
+    "^@/_hooks/(.*)$",
     "^@/_utils/(.*)$",
     "^@/_assets/(.*)$",
     "^@/_styles/(.*)$",
     "^@/_types/(.*)$",
     "",
+    "^@convex/(.*)$",
     "^[./]"
   ],
   "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
